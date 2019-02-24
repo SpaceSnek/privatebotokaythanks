@@ -6,7 +6,7 @@ const { Client, Attachment } = require('discord.js');
 bot.on('ready', () => {
   console.log("Connected as " + client.user.tag)
   bot.user.setActivity("Cant Stop Fucking | .help", {type: "Playing"})
-})
+});
 
 //This section Dms new users and tell thems to read the rules
 bot.on('guildMemberAdd', member => {
