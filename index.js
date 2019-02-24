@@ -66,6 +66,9 @@ bot.on('message', message => {
   if (message.content === 'how tall is hyper?') {
     message.channel.send('Hyper active is currently 5 foot 2')
   }
+   if (message.content === 'spacebot') {
+    message.channel.send('cant stop fucking')
+  }
 });
 
 
