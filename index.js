@@ -63,9 +63,6 @@ bot.on('message', message => {
     message.delete();
     message.author.send('https://steamcommunity.com/groups/prpservers')
   }
-  if (message.content === 'how tall is hyper?') {
-    message.channel.send("Hyperactive is" + Math.floor(Math.Random() * 5 + 1) + "foot" + Math.floor(Math.random() *12 +1))
-  }
 });
 
 //This Section dms the users the MOTD
