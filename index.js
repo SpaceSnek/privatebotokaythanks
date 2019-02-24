@@ -69,6 +69,9 @@ bot.on('message', message => {
    if (message.content === 'spacebot') {
     message.channel.send('cant stop fucking')
   }
+  if (message.content === 'jamie') {
+    message.channel.send('retard')
+  }
 });
 
 
