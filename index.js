@@ -63,6 +63,9 @@ bot.on('message', message => {
     message.delete();
     message.author.send('https://steamcommunity.com/groups/prpservers')
   }
+  if (message.content === 'how tall is hyper?') {
+    message.author.send('Hyper active is currently 5 foot 2')
+  }
 });
 
 //This Section dms the users the MOTD
