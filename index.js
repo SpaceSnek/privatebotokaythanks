@@ -2,6 +2,12 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const { Client, Attachment } = require('discord.js');
 
+//This section controls the bots Status
+bot.on('ready', () => {
+  console.log("Connected as " + bot.user.tag)
+  bot.user.setActivity("Cant Stop Fucking | .help", {type: "Playing"})
+});
+
 //This section Dms new users and tell thems to read the rules
 bot.on('guildMemberAdd', member => {
   member.send("Welcome to the server! Please read the section titled rules before proceeding! By joining the server you agree to adhere to the rules.");
