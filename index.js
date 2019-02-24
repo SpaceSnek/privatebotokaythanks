@@ -47,7 +47,9 @@ bot.on('message', message => {
     message.delete();
     message.author.send("--Commands List--")
     message.author.send("`.motd = PM's User a link to the PRP MOTD`") 
-    message.author.send("`.forums = PM's User a link to the PRP FORUMS`")
+    message.author.send("`.forums = PM's User a link to the PRP Forums`")
+    message.author.send("`.donate = PM's User a link to the PRP Donation Page`")
+    message.author.send("`.steam = PM's User a link to the PRP Steam Group`")
   }
   if (message.content === '.forums') {
     message.delete();
