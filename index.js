@@ -46,7 +46,7 @@ bot.on('message', message => {
   if (message.content === '.help') {
     message.delete();
     message.author.send("--Commands List--")
-    message.author.send("`.motd = PM's User a link to the PRP MOTD`") 
+    message.author.send("`.motd = PM's User a link to the PRP MOTD\n.forums = PM's User a link to the PRP Forums\n.donate = PM's User a link to the PRP Donation Page\n.steam = PM's User a link to the PRP Steam Group`") 
     message.author.send("`.forums = PM's User a link to the PRP Forums`")
     message.author.send("`.donate = PM's User a link to the PRP Donation Page`")
     message.author.send("`.steam = PM's User a link to the PRP Steam Group`")
