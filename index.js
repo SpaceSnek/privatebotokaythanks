@@ -67,5 +67,6 @@ bot.on('guildMemberAdd', member => {
   member.send("Welcome to the server! Please read the section titled rules before proceeding! By joining the server you agree to adhere to the rules.");
 });
 
+
 bot.login(process.env.BOT_TOKEN);
 
