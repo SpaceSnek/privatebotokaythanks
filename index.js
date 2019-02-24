@@ -45,11 +45,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === '.help') {
     message.delete();
-    message.author.send("--Commands List--")
-    message.author.send("`.motd = PM's User a link to the PRP MOTD\n.forums = PM's User a link to the PRP Forums\n.donate = PM's User a link to the PRP Donation Page\n.steam = PM's User a link to the PRP Steam Group`") 
-    message.author.send("`.forums = PM's User a link to the PRP Forums`")
-    message.author.send("`.donate = PM's User a link to the PRP Donation Page`")
-    message.author.send("`.steam = PM's User a link to the PRP Steam Group`")
+    message.author.send("`--Commands List--\n.motd = PM's User a link to the PRP MOTD\n.forums = PM's User a link to the PRP Forums\n.donate = PM's User a link to the PRP Donation Page\n.steam = PM's User a link to the PRP Steam Group`") 
   }
   if (message.content === '.forums') {
     message.delete();
@@ -68,7 +64,7 @@ bot.on('message', message => {
     message.author.send('https://steamcommunity.com/groups/prpservers')
   }
   if (message.content === 'how tall is hyper?') {
-    msg.channel.send("Hyperactive is" + Math.floor(Math.Random() * 5 + 1) + "foot" + Math.floor(Math.random() *12 +1))
+    message.channel.send("Hyperactive is" + Math.floor(Math.Random() * 5 + 1) + "foot" + Math.floor(Math.random() *12 +1))
   }
 });
 
