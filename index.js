@@ -38,8 +38,8 @@ bot.on('message', message => {
   //  message.author.send("--Commands List--")
   //  message.author.send("`.motd = PM's User a link to the PRP MOTD`") 
   //  message.author.send("`.forums = PM's User a link to the PRP FORUMS`")
-  }
-});
+ // }
+//});
 
 //This section Controls all Commands issued to the bot
 bot.on('message', message => {
@@ -64,6 +64,9 @@ bot.on('message', message => {
   if (message.content === '.steam') {
     message.delete();
     message.author.send('https://steamcommunity.com/groups/prpservers')
+  }
+  if (message.content === 'how tall is hyper?') {
+    msg.channel.send("Hyperactive is" + Math.floor(Math.Random() * 5 + 1) + "foot" + Math.floor(Math.random() *12 +1))
   }
 });
 
@@ -97,6 +100,6 @@ bot.on('guildMemberAdd', member => {
 });
 
 //How tall is hyper active?
-if (message.content === 'how tall is hyper?') {
-  msg.channel.send("Hyperactive is" + Math.floor(Math.Random() * 5 + 1) + "foot" + Math.floor(Math.random() *12 +1)
+
 bot.login(process.env.BOT_TOKEN);
+
