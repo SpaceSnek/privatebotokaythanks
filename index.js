@@ -31,15 +31,23 @@ bot.on('message', message => {
   }
 });
 
+//This Section dms the users the Help
+//bot.on('message', message => {
+ // if (message.content === '.help') {
+  //  message.delete();
+  //  message.author.send("--Commands List--")
+  //  message.author.send("`.motd = PM's User a link to the PRP MOTD`") 
+  //  message.author.send("`.forums = PM's User a link to the PRP FORUMS`")
+ // }
+//});
+
 //This section Controls all Commands issued to the bot
 bot.on('message', message => {
   if (message.content === '.help') {
     message.delete();
     message.author.send("--Commands List--")
     message.author.send("`.motd = PM's User a link to the PRP MOTD`") 
-    message.author.send("`.forums = PM's User a link to the PRP Forums`")
-    message.author.send("`.donate = PM's User a link to the PRP Donation Page`")
-    message.author.send("`.steam = PM's User a link to the PRP Steam Page`"
+    message.author.send("`.forums = PM's User a link to the PRP FORUMS`")
   }
   if (message.content === '.forums') {
     message.delete();
@@ -62,11 +70,35 @@ bot.on('message', message => {
   }
 });
 
+//This Section dms the users the MOTD
+//bot.on('message', message => {
+ // if (message.content === '.motd') {
+   // message.delete();
+  //  message.author.send('https://forums.prpservers.com/threads/drp-rules.4/')
+ // }
+//});
+
+//This Section dms the users the donation page
+//bot.on('message', message => {
+ // if (message.content === '.donate') {
+  //  message.delete();
+  //  message.author.send('https://donate.prpservers.com/')
+ // }
+//});
+
+//This Section dms the users the donation page
+//bot.on('message', message => {
+ // if (message.content === '.steam') {
+   // message.delete();
+  //  message.author.send('https://steamcommunity.com/groups/prpservers')
+//  }
+//});
+
 //This section Dms new users and tell thems to read the rules
 bot.on('guildMemberAdd', member => {
   member.send("Welcome to the server! Please read the section titled rules before proceeding! By joining the server you agree to adhere to the rules.");
 });
 
+//How tall is hyper active?
 
 bot.login(process.env.BOT_TOKEN);
-
