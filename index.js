@@ -73,6 +73,7 @@ bot.on('message', message => {
     message.channel.send('retard')
   }
   if (message.content === '.bans') {
+    message.delete();
     message.author.send('https://bans.prpservers.com/')
   }
 });
