@@ -45,7 +45,7 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === '.help') {
     message.delete();
-    message.author.send("`--Commands List--\n.motd = PM's User a link to the PRP MOTD\n.forums = PM's User a link to the PRP Forums\n.donate = PM's User a link to the PRP Donation Page\n.steam = PM's User a link to the PRP Steam Group`") 
+    message.author.send("`--Commands List--\n.motd = PM's User a link to the PRP MOTD\n.forums = PM's User a link to the PRP Forums\n.donate = PM's User a link to the PRP Donation Page\n.steam = PM's User a link to the PRP Steam Group\n.bans = Posts a link to the bans page of the PRP servers`") 
   }
   if (message.content === '.forums') {
     message.delete();
@@ -71,6 +71,9 @@ bot.on('message', message => {
   }
   if (message.content === 'jamie') {
     message.channel.send('retard')
+  }
+  if (message.content === '.bans') {
+    message.author.send('https://bans.prpservers.com/')
   }
 });
 
