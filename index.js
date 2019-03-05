@@ -64,7 +64,7 @@ bot.on('message', message => {
     message.author.send('https://steamcommunity.com/groups/prpservers')
   }
   if (message.content === 'how tall is hyper?') {
-    message.channel.send('Hyper active is currently 5 foot 2')
+    message.channel.send('Hyper active is above average height.')
   }
    if (message.content === 'spacebot') {
     message.channel.send('cant stop fucking')
