@@ -77,7 +77,6 @@ bot.on('message', message => {
     message.author.send('https://bans.prpservers.com/')
   }
    if (message.content === 'lordy lordy') {
-    message.delete();
     message.channel.send('Id never roam again')
   }
 });
