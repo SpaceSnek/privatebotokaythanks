@@ -24,7 +24,7 @@ var ops = {
 //This section controls the bots Status
 client.on('ready', () => {
   console.log("Connected as " + client.user.tag)
- client.user.setActivity("Cant Stop Fucking | .help", {type: "Playing"})
+ client.user.setActivity("Space bot | .help", {type: "Playing"})
 });
 
 //This section Dms new users and tell thems to read the rules
@@ -46,7 +46,7 @@ client.on('message', message => {
 //Scans for message being sent on the server
 client.on('message', message => {
   //1 blacklisted words
-  let blacklisted = ['nigger',"n1gg3r","n1gger","nigg3r","nlgger","n|gger","n!gger","njgger","chink","ch1nk", "n  i  g  g  e  r","n igger","ni gger","nig ger","nigg er","nigge r","n.igger","n i g g e r","||igger","N 1gger","N¡gger","ngger"] //words put , after the word
+  let blacklisted = [insert censored words here] //words put , after the word
 
   //2 Looks for words that are in the above blacklist.
   let foundInText = false;
