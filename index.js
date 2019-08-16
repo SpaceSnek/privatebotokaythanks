@@ -283,9 +283,6 @@ client.on("message", async function (message) {
   }
 });
 
-bot.login(process.env.BOT_TOKEN);
-console.log("Bot started!");
-
 
 async function play(client, ops, data) {
 
@@ -392,4 +389,5 @@ async function playYT(client, message, args, ops) {
 
   ops.active.set(message.guild.id, data);
 }
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
+console.log("Bot started!");
