@@ -392,4 +392,4 @@ async function playYT(client, message, args, ops) {
 
   ops.active.set(message.guild.id, data);
 }
-bot.run('<BOT_TOKEN>')
+client.login(process.env.BOT_TOKEN);
